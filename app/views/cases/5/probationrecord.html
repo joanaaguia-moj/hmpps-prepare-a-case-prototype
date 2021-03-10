@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+Probation record
+{% endblock %}
+
+{% block bodyStart %}
+{% block keyDetails %}
+{% include "includes/key_details/5_Hill.html" %}
+{% endblock %}
+{% endblock %}
+
+
+{% block beforeContent %}
+<a href="/cases/day/2020-06-17/case-list" class="govuk-back-link">Back to cases</a>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <nav class="moj-sub-navigation" aria-label="Sub navigation">
+
+      <ul class="moj-sub-navigation__list">
+        <li class="moj-sub-navigation__item">
+          <a class="moj-sub-navigation__link govuk-link--no-visited-state" href="/cases/5/summary">Case summary</a>
+        </li>
+        <li class="moj-sub-navigation__item">
+          <a class="moj-sub-navigation__link govuk-link--no-visited-state" aria-current="page" href="/cases/5/probationrecord.html">Probation
+            record</a>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-l govuk-!-margin-bottom-7">Probation record</h1>
+  </div>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <div class="govuk-!-margin-bottom-9">
+      <h2 class="govuk-heading-m">
+        Awaiting sentence <span class="secondary-text-col">(1)</span>
+      </h2>
+      <div class="current-order-wrapper">
+        <p class="govuk-body  govuk-!-margin-bottom-1">Fail to provide specimen for analysis - vehicle driver - 195745</p>
+        <p class="govuk-body  govuk-!-margin-bottom-1"><span class="secondary-text-col">Convicted on 22 February 2021</span></p>
+        <p class="govuk-body">Adjourned for other reason on 22 February 2021</p>
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" style="max-width: 727px;">
+      </div>
+    </div>    
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+{% endblock %}
